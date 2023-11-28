@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navigation .menu {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigation ul li a {
+  padding-right: 40px;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+.logo {
+  padding: 10px;
+  margin-left: 40px;
+  width: 40px;
+}
+
+.user {
+  margin-right: 40px;
+  width: 40px;
+}
+
+.login {
+  height: 80vh;
+  width: 43vw;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  margin: 12vh 28vw;
+}
+
+.fas {
+  margin: 5vh 0 0 17.5vw;
+  font-size: 100px;
+  color: green;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 2vh;
+  margin-top: 2vh;
+  font-size: 50px;
+}
+
+.box1 {
+  width: 31vw;
+  height: 23px;
+  margin-top: 25px;
+  margin-left: 5vw;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 2px solid;
+  display: inline-block;
+  padding: 5px;
+}
+
+.box2 {
+  width: 31vw;
+  height: 23px;
+  margin-top: 25px;
+  margin-left: 5vw;
+  margin-bottom: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 2px solid;
+  display: inline-block;
+  padding: 5px;
+}
+
+.tnc {
+  margin-left: 5px;
+}
+
+.forget {
+  color: blue;
+  margin-left: 27vw;
+}
+
+.login_btn {
+  display: block;
+  margin-top: 2vh;
+  margin-left: 5.5vw;
+  margin-bottom: 20px;
+  height: 6vh;
+  width: 31vw;
+  color: white;
+  border-radius: 10px;
+  background-color: green;
+  font-size: large;
+}
+
+.login_btn:hover {
+  background-color: rgba(0, 128, 0, 0.8);
+}
+
+.acc {
+  margin-left: 13vw;
+  margin-top: 2vh;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}

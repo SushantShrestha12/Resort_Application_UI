@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Room Reservation</title>
+    <link rel="stylesheet" href="/CSS/Firms/reservation.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+          <div>
+            <img class="logo" src="/Images/logo.png" />
+          </div>
+  
+          <div>
+            <nav class="navigation">
+              <ul>
+                <li>
+                  <a class="menu" href="/HTML/index.html">HOME</a>
+                  <a class="menu" href="#">SERVICES</a>
+                  <a class="menu" href="#">CONTACT</a>
+                  <a class="menu" href="#">ABOUT</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </header>
+
+    <h1 class="heading">Room Reservation</h1>
+    <form>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        
+        <input type="tel" id="phone" name="phone" placeholder="Phone No" required>
+        
+        <input type="number" id="adults" name="adults" placeholder="Number of Adults" required>
+        
+        <input type="number" id="children" name="children" placeholder="Number of Children" required>
+        
+        <select id="room" name="room" required>
+            <option value="">Select a room</option>
+            <option value="single">Standard</option>
+            <option value="double">Deluxe</option>
+            <option value="suite">Suite</option>
+        </select>
+        
+        <input type="date" id="checkin" name="checkin" placeholder="Check-in Date" required>
+        
+        <input type="date" id="checkout" name="checkout" placeholder="Check-out Date" required>
+        
+        <input type="submit" value="Reserve" id="reserveBtn">
+    </form>
+    <footer>
+        <p>&copy; 2023 Something. All rights reserved.</p>  
+    </footer>
+
+    <script src="/JS/reservation.js"></script>
+</body>
+</html>

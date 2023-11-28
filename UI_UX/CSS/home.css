@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navigation .menu {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigation ul li a {
+  padding-right: 40px;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+.logo {
+  padding: 10px;
+  margin-left: 40px;
+  width: 40px;
+}
+
+.loginText {
+  margin-right: 20px;
+}
+
+.user {
+  margin-right: 40px;
+  width: 30px;
+}
+
+.loginSignup{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rebeccapurple;
+  background-color: #fff;
+}
+
+.heading h1 {
+  font-size: 50px;
+}
+
+.book-btn {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(220, 37, 37);
+    color: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.content{
+    margin: 50px 0;
+    padding: 100px 100px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color:#f5f5f5;
+}
+
+.content2{
+  margin: 50px 0;
+  padding: 100px 100px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color:#fff;
+}
+
+.servicesImg{
+    width: 300px;
+    height: 200px;
+    margin: 20px 10px;
+}
+
+h3{
+  font-size: 3rem;
+}
+
+.box
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.paragraph{
+    margin: 20px 10px;
+    font-size: 20px;
+    width: 30vw;
+    text-align: justify;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
