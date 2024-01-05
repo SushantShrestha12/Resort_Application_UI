@@ -9,6 +9,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
     />
     <link rel="stylesheet" href="/CSS/Firms/room.css" />
+
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
   </head>
   <body>
     <header>
@@ -49,14 +56,21 @@
       <div>
         <ul>
           <li>
-            <img class="carouselImg" src="/Images/services.jpg" />
+            <img class="carouselImg" src="/Images/room1.jpg" />
           </li>
         </ul>
       </div>
       <div>
         <ul>
           <li>
-            <img class="carouselImg" src="/Images/services.jpg" />
+            <img class="carouselImg" src="/Images/room1_sofa.jpg" />
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <img class="carouselImg" src="/Images/room1_others.jpg" />
           </li>
         </ul>
       </div>
@@ -97,30 +111,52 @@
 
     <div class="formContainer">
       <form class="bookingForm">
-        <input type="number" class="box1" id="adults" placeholder="No of adult">
+        <input type="text" class="box1" id="name" placeholder="Full Name" />
 
-        <input type="number" class="box1" id="children" placeholder="No of children">
+        <input
+          type="number"
+          class="box1"
+          id="phone"
+          placeholder="Phone Number"
+        />
 
-        <select id="room" name="room" required>
+        <input
+          type="number"
+          class="box1"
+          id="adults"
+          placeholder="No of adult"
+        />
+
+        <input
+          type="number"
+          class="box1"
+          id="children"
+          placeholder="No of children"
+        />
+        <br />
+
+        <!-- <select id="room" name="room" required>
           <option value="">Select a room</option>
           <option value="single">Standard</option>
           <option value="double">Deluxe</option>
           <option value="suite">Suite</option>
-      </select> <br>
+      </select> <br> -->
 
-        <label>Check in date</label>
+        <label>Check in date - Check out date</label>
+        <input type="text" name="dates" id="daterange-check"/>
+
+        <!-- <label>Check in date</label>
         <input type="date" class="box2" id="checkin"> 
         <label>Check out date</label>
-        <input type="date" class="box2" id="checkout">
+        <input type="date" class="box2" id="checkout"> -->
       </form>
     </div>
 
     <div>
-      <a href="/HTML/Firms/reservation.html">
-      <button class="bookNowBtn" id="bookBtn">Book Now</button>
-    </a>
+      <!-- <a href="/HTML/Firms/reservation.html"> -->
+      <button class="bookNowBtn" id="bookBtn">Book!</button>
+      <!-- </a> -->
     </div>
-
 
     <footer>
       <p>&copy; 2023 Something. All rights reserved.</p>
@@ -133,10 +169,29 @@
     ></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+  ></script>
 
     <script>
       $(".slider").slick();
     </script>
-    <script src="/JS/room.js"></script>
+    
+
+    <script type="text/javascript">
+       $('input[name="dates"]').daterangepicker();
+
+       
+    </script>
+
+    <script src="/JS/room.js">
+
+    </script>
   </body>
 </html>

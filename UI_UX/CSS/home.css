@@ -52,6 +52,13 @@ ul li {
   align-items: center;
 }
 
+.login{
+  margin-right: 5px;
+  border-radius:  10px;
+  width: 60px;
+  height: 25px;
+}
+
 .heading {
   height: 100vh;
   display: flex;
@@ -61,6 +68,10 @@ ul li {
   text-align: center;
   color: rebeccapurple;
   background-color: #fff;
+  background-image: url("/Images/resortbg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .heading h1 {
