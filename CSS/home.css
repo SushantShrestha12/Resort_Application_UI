@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.bookRoomBtn{
+  width: 140%;
+}
+
+.dropdown-menu
+{
+  width: 50%;
+}
+
+.button-group{
+  height: 3vh;
+
+}
+
+.deluxeBtn{
+  margin-left: 12px;
+}
+
+.suiteBtn{
+  margin-left: 9px;
+}
+
+.adultBtn{
+  margin-left: 15px;
+}
+
+.wholeBtn{
+  background-color: white;
+  padding: 10px;
+  width: 77%;
+  border-radius: 30px;
+}
+
+.roomType{
+  border: 1px solid black;
+}
+
+#roomType{
+  left: 2px;
+}
+
+#children{
+  left: -1px;
+}
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Food</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar fixed-top navbar-expand-lg bg-body-primary"
+        data-bs-theme="white"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/Images/resortLogo.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top img-thumbnail"
+            />
+            Resort
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/HTML/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container mt-5 d-flex justify-content-evenly">
+      <div>
+        <h2 class="card-title">Breakfast</h2>
+        <div
+          class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4"
+          id="breakfast-container"
+        >
+          <table class="table" id="breakfastTable">
+            <thead>
+              <tr>
+                <th>Details</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <!-- <th>Image</th> -->
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <h2 class="card-title">Lunch</h2>
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4"
+              id="lunch-container"
+            >
+              <table class="table" id="lunchTable">
+                <thead>
+                  <tr>
+                    <th>Details</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <!-- <th>Image</th> -->
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="card-title">Snack</h2>
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4"
+              id="snack-container"
+            >
+              <table class="table" id="snackTable">
+                <thead>
+                  <tr>
+                    <th>Details</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <!-- <th>Image</th> -->
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="card-title">Dinner</h2>
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4"
+              id="dinner-container"
+            >
+              <table class="table" id="dinnerTable">
+                <thead>
+                  <tr>
+                    <th>Details</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <!-- <th>Image</th> -->
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <table class="table" id="billTable">
+            <thead>
+              <tr>
+                <th scope="col">S.N</th>
+                <th scope="col">Particulars</th>
+                <th scope="col">Rate</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr id="grandTotal">
+            
+              
+              </tr> -->
+
+              <template id="orderBill">
+                <tr>
+                  <td>%sn%</td>
+                  <td>%particulars%</td>
+                  <td>%rate%</td>
+                  <td>%quantity%</td>
+                  <td>%total%</td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+          <div class="container d-flex justify-content-center mt-4">
+            <div>
+              <button type="button" class="btn btn-success" id="saveOrderBtn">
+                Save order
+              </button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="/JS/orderFoodPackage.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

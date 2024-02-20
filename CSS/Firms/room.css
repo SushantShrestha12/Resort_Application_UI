@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .navigation .menu {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navigation ul li a {
+    padding-right: 40px;
+    text-align: center;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  .logo {
+    padding: 10px;
+    margin-left: 40px;
+    width: 40px;
+  }
+  
+  .loginText {
+    margin-right: 20px;
+  }
+  
+  .user {
+    margin-right: 40px;
+    width: 30px;
+  }
+  
+  .loginSignup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .heading {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rebeccapurple;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading h1 {
+    font-size: 3rem;
+  }
+  
+  .content {
+    margin: 50px 0;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resortImg {
+    width: 300px;
+    height: 200px;
+    margin: 20px 10px;
+  }
+  
+  .slider {
+      margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .carouselImg {
+    width: 60%;
+    height: 60%;
+  }
+  
+  .description {
+      margin: 20px 50px;
+      font-size: 20px;
+      width: 50vw;
+      text-align: justify;
+  }
+  
+  .description p{
+     
+      font-size: 20px;
+      width: 60vw;
+      text-align: justify;
+  }
+
+  .formContainer{
+    margin: 10px 50px;
+    padding: 20px 50px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 53vw;
+    height: 30vh;
+    border-radius: 20px;
+  }
+
+  .box1{
+      margin: 20px 30px 20px 0;
+      padding: 10px 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 30%;
+  }
+
+  .box2{
+      margin: 20px 20px;
+      padding: 10px 30px;
+      border: 1px solid black;
+      border-radius: 10px;
+  }
+
+select {
+  width: 80%;
+  height: 5vh;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+  .bookNowBtn {
+    margin: 30px 400px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }

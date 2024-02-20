@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resort Name</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 150px;
+}
+</style>
+    <!-- <link rel="stylesheet" href="/CSS/Firms/resort.css" /> -->
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar fixed-top navbar-expand-lg bg-body-primary"
+        data-bs-theme="white"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/Images/resortLogo.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top img-thumbnail"
+            />
+            Resort
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/HTML/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="mt-5 mb-3 d-flex justify-content-center">
+        <h1>Resort Name</h1>
+      </div>
+
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Images/Resort-1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/Resort-2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/Images/resort_img3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="description mt-3">
+        <h2>Description</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+          asperiores sint perferendis facere totam odit alias ullam minus
+          facilis, id sit mollitia dolores est culpa. Vel, porro quam! Alias
+          deleniti impedit explicabo facilis cupiditate delectus, eaque ut optio
+          laudantium deserunt incidunt minima, magni perferendis! Nam mollitia
+          alias, quia eum vitae perferendis quidem voluptatibus, hic ut magnam
+          totam eveniet dolorum exercitationem asperiores soluta officia vel
+          repellendus autem tenetur laudantium? Aperiam delectus, voluptas
+          soluta quia nisi corporis accusantium accusamus, veniam voluptatem
+          officia sequi doloribus vero perspiciatis beatae explicabo earum rerum
+          obcaecati sint qui omnis commodi. Aliquam in, odit iste quod doloribus
+          non eum obcaecati sit modi necessitatibus fugiat, explicabo ea et
+          totam! Blanditiis eos praesentium nisi eius qui ea? Totam consequuntur
+          expedita libero accusantium omnis qui, porro inventore dolor eveniet
+          veritatis esse nam tenetur dolorem et quam odit voluptates debitis
+          dolores ipsum est. Natus, impedit similique optio eligendi ab illum
+          fugit hic a possimus est. Architecto eaque nam at deleniti ullam
+          exercitationem fuga rerum commodi excepturi deserunt placeat, ipsa
+          numquam voluptatem? Nisi, nobis, deleniti eum molestias suscipit unde
+          repellat repellendus omnis consequatur rerum ullam earum nemo commodi
+          non fuga debitis veniam tenetur?
+        </p>
+      </div>
+
+      <h2>Explore Rooms</h2>
+      <div class="d-flex justify-content-evenly flex-wrap mt-3" id="roomsContainer">
+        </div>
+
+      <!-- <div class="d-flex justify-content-evenly flex-wrap mt-3">
+
+      <div class="card mb-5" style="width: 18rem">
+        <img src="/Images/room1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Suite</h5>
+          <p class="card-text">Couple | Friends</p>
+        </div>
+
+        <div class="card-body">
+          <a href="/HTML/Firms/room.html">
+          <button type="button" class="btn btn-info">Find More</button>
+        </a>
+        </div>
+      </div>
+
+      <div class="card mb-5" style="width: 18rem">
+        <img src="/Images/room2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Suite</h5>
+          <p class="card-text">Couple | Friends</p>
+        </div>
+
+        <div class="card-body">
+          <a href="/HTML/Firms/room.html">
+            <button type="button" class="btn btn-info">Find More</button>
+          </a>
+                </div>
+      </div>
+
+      <div class="card mb-5" style="width: 18rem">
+        <img src="/Images/room3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Suite</h5>
+          <p class="card-text">Couple | Friends</p>
+        </div>
+
+        <div class="card-body">
+          <a href="/HTML/Firms/room.html">
+            <button type="button" class="btn btn-info">Find More</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="card mb-5" style="width: 18rem">
+        <img src="/Images/room1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Suite</h5>
+          <p class="card-text">Couple | Friends</p>
+        </div>
+
+        <div class="card-body">
+          <a href="/HTML/Firms/room.html">
+            <button type="button" class="btn btn-info">Find More</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="card mb-5" style="width: 18rem">
+        <img src="/Images/room2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Suite</h5>
+          <p class="card-text">Couple | Friends</p>
+        </div>
+
+        <div class="card-body">
+          <a href="/HTML/Firms/room.html">
+            <button type="button" class="btn btn-info">Find More</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="card mb-5" style="width: 18rem">
+        <img src="/Images/room1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Suite</h5>
+          <p class="card-text">Couple | Friends</p>
+        </div>
+
+        <div class="card-body">
+          <a href="/HTML/Firms/room.html">
+            <button type="button" class="btn btn-info">Find More</button>
+          </a>
+        </div>
+      </div>n 
+    </div> -->
+    </div>
+
+    <!-- <div class="mt-5 fixed-bottom">
+    <footer class="text-bg-secondary p-3 text-center">
+      &copy; 2023 Something. All rights reserved.
+    </footer>
+  </div> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/JS/Admin/getRoom.js"></script>
+  </body>
+</html>
